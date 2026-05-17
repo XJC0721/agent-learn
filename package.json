@@ -1,0 +1,23 @@
+{
+  "name": "pomodoro-desktop",
+  "version": "1.0.0",
+  "description": "Desktop Pomodoro Timer",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.3.0",
+    "vite": "^5.3.1",
+    "vue": "^3.4.21"
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.1",
+    "@electron-toolkit/utils": "^3.0.0"
+  }
+}
