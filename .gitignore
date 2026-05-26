@@ -1,0 +1,16 @@
+node_modules/
+out/
+dist/
+.DS_Store
+*.local
+
+# 敏感文件 - 绝对不能上传
+.env
+.claude/
+.agents/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
