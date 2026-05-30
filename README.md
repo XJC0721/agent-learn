@@ -23,6 +23,9 @@ LangChain / LangGraph 学习笔记，记录从零开始学习 AI Agent 开发的
 | agent15.py | 上下文工程-Store，从长期记忆读取用户偏好动态修改 system prompt |
 | agent16.py | 上下文工程-Runtime，根据用户角色和环境动态控制工具权限 |
 | agent17.py | 上下文工程-消息列表，@wrap_model_call 将本地文件内容注入消息列表 |
+| agent18.py | 上下文工程-工具中使用上下文，SqliteStore 持久化存储，ToolRuntime 读取 store |
+| agent19.py | 上下文工程-工具中使用上下文进阶，ToolRuntime[Context] 动态控制工具返回哪个字段 |
+| agent20.py | 压缩上下文，SummarizationMiddleware 自动将旧消息压缩成摘要，避免上下文腐坏 |
 
 ## 技术栈
 
