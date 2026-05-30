@@ -81,6 +81,7 @@ store = InMemoryStore(index={"embed": embed, "dims": EMBED_DIM})
 # ("users", "admin")    # users 下面的 admin 子分类
 # ("users", "normal")   # users 下面的 normal 子分类
 # 设计成元组是为了支持多级分类，现在只用一级所以只有一个元素。
+
 namespace = ("users", )
 key = "user_1"
 store.put(
@@ -104,12 +105,28 @@ store.put(
     }  # Data to store for the given user
 )
 
-# get the "memory" by ID
+# get the "memory" by ID按 ID 精确查 store.get()
 item = store.get(namespace, "a-memory")
 
+# store.search() — 按语义搜索
 # search for "memories" within this namespace, filtering on content equivalence, sorted by vector similarity
 items = store.search(
     namespace, filter={"rule_id": "3"}, query="language preferences"
 )
 
 print(items)
+
+
+# 1. 加载环境变量（.env）
+# 2. 创建 embedding 客户端（阿里云）
+# 3. 创建对话模型（DeepSeek）
+# 4. 定义 embed() 函数
+# 5. 测试 embed()：把2句话转成向量 → print(2, 1024)
+# 6. 创建 InMemoryStore 向量数据库
+# 7. store.put() 存入 user_1 的记忆
+# 8. store.put() 存入 user_2 的记忆
+# 9. store.get() 按 ID 查 "a-memory" → 返回 None（不存在）
+# 10. store.search() 语义搜索 "language preferences" → 找到 user_1
+# 11. print(items) 打印结果
+#    ↓ 结束
+# 全程只有代码在运行，没有 Agent 参与，查什么、怎么查都是写死的。

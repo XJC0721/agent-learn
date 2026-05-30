@@ -17,6 +17,12 @@ LangChain / LangGraph 学习笔记，记录从零开始学习 AI Agent 开发的
 | agent09.py | 短期记忆进阶，StateGraph 手动构建带记忆的对话图 |
 | agent10.py | create_agent 简洁写法，用 checkpointer 实现短期记忆，替代手动 StateGraph |
 | agent11.py | 长期记忆，text-embedding-v4 向量化文本，InMemoryStore 存储和语义检索跨会话记忆 |
+| agent12.py | 长期记忆进阶，用 @tool + ToolRuntime 让 Agent 通过工具读取 store |
+| agent13.py | 长期记忆写入，用工具让 Agent 从对话中提取信息主动存入 store |
+| agent14.py | 上下文工程-State，@dynamic_prompt 根据消息数量动态修改 system prompt |
+| agent15.py | 上下文工程-Store，从长期记忆读取用户偏好动态修改 system prompt |
+| agent16.py | 上下文工程-Runtime，根据用户角色和环境动态控制工具权限 |
+| agent17.py | 上下文工程-消息列表，@wrap_model_call 将本地文件内容注入消息列表 |
 
 ## 技术栈
 
