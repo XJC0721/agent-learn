@@ -26,6 +26,9 @@ LangChain / LangGraph 学习笔记，记录从零开始学习 AI Agent 开发的
 | agent18.py | 上下文工程-工具中使用上下文，SqliteStore 持久化存储，ToolRuntime 读取 store |
 | agent19.py | 上下文工程-工具中使用上下文进阶，ToolRuntime[Context] 动态控制工具返回哪个字段 |
 | agent20.py | 压缩上下文，SummarizationMiddleware 自动将旧消息压缩成摘要，避免上下文腐坏 |
+| agent21.py | MCP 客户端，MultiServerMCPClient 同时连接天气和算数两个 MCP Server |
+| mcp_server/get_weather_mcp/ | MCP Server - 天气工具，HTTP 方式运行在 8000 端口 |
+| mcp_server/math_mcp/ | MCP Server - 算数工具，stdio 方式按需启动 |
 
 ## 技术栈
 
