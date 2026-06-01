@@ -36,6 +36,8 @@ LangChain / LangGraph 学习笔记，记录从零开始学习 AI Agent 开发的
 | agent26.py | 深度Agent，deepagents + DuckDuckGo 实现多轮自主搜索，整合网络信息生成报告 |
 | simple_agent.py | LangGraph CLI 调试用 Agent，配合 langgraph.json 启动本地可视化调试页面 |
 | langgraph.json | LangGraph CLI 配置文件，指定 Agent 入口和环境变量路径 |
+| db_agent_rag.py | 向量库知识智能体，txt文件按空行切分后向量化存入Chroma，Agent检索回答 |
+| files/ | 知识库目录，存放待向量化的 txt 文件 |
 
 ## 技术栈
 
