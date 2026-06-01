@@ -33,6 +33,9 @@ LangChain / LangGraph 学习笔记，记录从零开始学习 AI Agent 开发的
 | agent23.py | 多智能体-监督者模式（langgraph-supervisor），create_supervisor 直接接收 Agent 列表 |
 | agent24.py | 并行-节点并行，两个节点同时从 START 出发，验证并行执行效果 |
 | agent25.py | 并行-Map-reduce，Send 动态分发角色并行生成回复，汇总选出最佳 |
+| agent26.py | 深度Agent，deepagents + DuckDuckGo 实现多轮自主搜索，整合网络信息生成报告 |
+| simple_agent.py | LangGraph CLI 调试用 Agent，配合 langgraph.json 启动本地可视化调试页面 |
+| langgraph.json | LangGraph CLI 配置文件，指定 Agent 入口和环境变量路径 |
 
 ## 技术栈
 
