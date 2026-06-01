@@ -29,6 +29,10 @@ LangChain / LangGraph 学习笔记，记录从零开始学习 AI Agent 开发的
 | agent21.py | MCP 客户端，MultiServerMCPClient 同时连接天气和算数两个 MCP Server |
 | mcp_server/get_weather_mcp/ | MCP Server - 天气工具，HTTP 方式运行在 8000 端口 |
 | mcp_server/math_mcp/ | MCP Server - 算数工具，stdio 方式按需启动 |
+| agent22.py | 多智能体-监督者模式（tool-calling），子 Agent 包装成工具传给 supervisor |
+| agent23.py | 多智能体-监督者模式（langgraph-supervisor），create_supervisor 直接接收 Agent 列表 |
+| agent24.py | 并行-节点并行，两个节点同时从 START 出发，验证并行执行效果 |
+| agent25.py | 并行-Map-reduce，Send 动态分发角色并行生成回复，汇总选出最佳 |
 
 ## 技术栈
 
