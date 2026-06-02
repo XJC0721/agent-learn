@@ -1,6 +1,6 @@
 # agent-learn
 
-LangChain / LangGraph 学习笔记，记录从零开始学习 AI Agent 开发的过程。
+LangChain / LangGraph / RAG 学习笔记，记录从零开始学习 AI Agent 与 RAG 应用开发的过程。
 
 ## 文件说明
 
@@ -38,6 +38,16 @@ LangChain / LangGraph 学习笔记，记录从零开始学习 AI Agent 开发的
 | langgraph.json | LangGraph CLI 配置文件，指定 Agent 入口和环境变量路径 |
 | db_agent_rag.py | 向量库知识智能体，txt文件按空行切分后向量化存入Chroma，Agent检索回答 |
 | files/ | 知识库目录，存放待向量化的 txt 文件 |
+
+### RAG 系列
+
+| 文件 | 内容 |
+|------|------|
+| rag/rag01.py | 四步基础 RAG：TextLoader 加载 → 切片 → InMemoryVectorStore → 检索 → LLM 回答 |
+| rag/rag02.py | 文档加载器对比：TextLoader、DirectoryLoader、PyPDFLoader 三种加载方式 |
+| rag/rag03.py | 切片策略：CharacterTextSplitter、RecursiveCharacterTextSplitter、代码专用切分 |
+| rag/rag04.py | 语义分块：SemanticChunker 按向量距离判断切分点，支持中文优化正则 |
+| rag/files/ | RAG 知识库目录，存放 md/pdf 等待检索的文档 |
 
 ## 技术栈
 
