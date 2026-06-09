@@ -50,6 +50,7 @@ LangChain / LangGraph / RAG 学习笔记，记录从零开始学习 AI Agent 与
 | rag/rag05.py | 向量数据库 FAISS：from_documents 建库、save_local/load_local 持久化、增量追加 |
 | rag/rag06.py | 句子窗口检索：单句索引保证检索精准，metadata 存窗口文本扩展上下文给 LLM |
 | rag/rag07.py | 结构化索引：存文档时打 metadata 标签，检索时用 filter 先过滤再向量搜索 |
+| rag/rag08.py | 混合检索：BM25 稀疏（关键词精准）+ FAISS 密集（语义理解），手动 RRF 融合排名 |
 | rag/files/ | RAG 知识库目录，存放 md/pdf/faiss 等文件 |
 
 ## 技术栈
