@@ -55,6 +55,8 @@ LangChain / LangGraph / RAG 学习笔记，记录从零开始学习 AI Agent 与
 | rag/rag10.py | LLM 路由：LLM 分类问题意图（tech/biz），路由到对应知识库检索回答 |
 | rag/rag11.py | 向量路由：路由描述提前向量化，用余弦相似度匹配最近路由，不调 LLM，速度快成本低 |
 | rag/rag12.py | 重排序（RankLLM）：两阶段检索，FAISS 召回 Top-6 后 LLM 精排取 Top-3 |
+| rag/rag13.py | 格式化生成（PydanticOutputParser）：BaseModel 定义结构，自动生成格式指令，自动解析+类型验证 |
+| rag/rag14.py | Function Calling 底层原理：两次 API 调用，模型决策调哪个工具，代码执行后结果发回模型生成最终答案 |
 | rag/files/ | RAG 知识库目录，存放 md/pdf/faiss 等文件 |
 
 ## 技术栈
