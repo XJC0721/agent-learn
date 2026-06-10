@@ -51,6 +51,10 @@ LangChain / LangGraph / RAG 学习笔记，记录从零开始学习 AI Agent 与
 | rag/rag06.py | 句子窗口检索：单句索引保证检索精准，metadata 存窗口文本扩展上下文给 LLM |
 | rag/rag07.py | 结构化索引：存文档时打 metadata 标签，检索时用 filter 先过滤再向量搜索 |
 | rag/rag08.py | 混合检索：BM25 稀疏（关键词精准）+ FAISS 密集（语义理解），手动 RRF 融合排名 |
+| rag/rag09.py | 自查询检索：LLM 从自然语言中自动提取 metadata filter，拆分为语义查询+结构化过滤条件 |
+| rag/rag10.py | LLM 路由：LLM 分类问题意图（tech/biz），路由到对应知识库检索回答 |
+| rag/rag11.py | 向量路由：路由描述提前向量化，用余弦相似度匹配最近路由，不调 LLM，速度快成本低 |
+| rag/rag12.py | 重排序（RankLLM）：两阶段检索，FAISS 召回 Top-6 后 LLM 精排取 Top-3 |
 | rag/files/ | RAG 知识库目录，存放 md/pdf/faiss 等文件 |
 
 ## 技术栈
