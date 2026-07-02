@@ -57,6 +57,7 @@ LangChain / LangGraph / RAG 学习笔记，记录从零开始学习 AI Agent 与
 | rag/rag12.py | 重排序（RankLLM）：两阶段检索，FAISS 召回 Top-6 后 LLM 精排取 Top-3 |
 | rag/rag13.py | 格式化生成（PydanticOutputParser）：BaseModel 定义结构，自动生成格式指令，自动解析+类型验证 |
 | rag/rag14.py | Function Calling 底层原理：两次 API 调用，模型决策调哪个工具，代码执行后结果发回模型生成最终答案 |
+| rag/recipe_rag/ | 菜谱问答系统（完整 RAG 应用）：365 道菜谱，父子文档策略（子文档索引 + 完整菜谱回传 LLM），混合检索（BM25 关键词 + FAISS 语义）+ RRF 融合排名，LLM 查询路由（列表/详情/通用三种策略），流式输出 |
 | rag/files/ | RAG 知识库目录，存放 md/pdf/faiss 等文件 |
 
 ## 技术栈
